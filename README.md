@@ -1,4 +1,4 @@
-# group-project1
+# tom_n_jquery
 
 https://mystic5523.github.io/group-project1
 
