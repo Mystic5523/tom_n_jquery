@@ -1,120 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-    crossorigin="anonymous">
-  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-  <title>Employee Tracker</title>
-</head>
-<body>
-  <body style="max-width: 80%; margin-left: auto; margin-right: auto;">
-    <!--Jumbotron-->
-    <div class="jumbotron text-center bg-dark text-white">
-      <h1 class="display-4">Anytime is train time</h1>
-      <p class="lead">Choo! Choo!</p>
-    </div>
-    <!--Table-->
-    <div class="card card-default">
-      <div class="card-body">
-        <table class="table table-sm">
-          <thead>
-            <tr>
-              <th scope="col">Train Name</th>
-              <th scope="col">Destination</th>
-              <th scope="col">Frequency</th>
-              <th scope="col">Next Arrival</th>
-              <th scope="col">Minutes away</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Trenton Express</th>
-              <td>Trenton</td>
-              <td>25</td>
-              <td>5:35 PM</td>
-              <td>10</td>
-            </tr>
-            <tr>
-              <th scope="row">Oregon Trail</th>
-              <td>Salem, Oregon</td>
-              <td>3600</td>
-              <td>01:39 PM</td>
-              <td>1154</td>
-            </tr>
-            <tr>
-              <th scope="row">Midnight Carriage</th>
-              <td>Philadelphia</td>
-              <td>15</td>
-              <td>5:35 PM</td>
-              <td>10</td>
-            </tr>
-            <th scope="row">Sing Sing Caravan</th>
-            <td>Atlanta</td>
-            <td>45</td>
-            <td>5:53 PM</td>
-            <td>28</td>
-            </tr>
-            <th scope="row">Boston Bus</th>
-            <td>Boston</td>
-            <td>09/03/2000</td>
-            <td>65</td>
-            <td>5:50PM</td>
-            </tr>
-            <tr>
-              <th scope="row">California Cavern</th>
-              <td>San Franscico</td>
-              <td>6000</td>
-              <td>01:25 AM</td>
-              <td>4740</td>
-            </tr>
-            <tr>
-              <th scope="row">Annabellian's Train</th>
-              <td>Flordia</td>
-              <td>25</td>
-              <td>05:28 PM</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <br>
-    <!--Form,-->
-    <div class="card card-default">
-      <div class="card-body">
-        <form>
-          <div class="form-group font-weight-bold">
-            <label>Train Name:</label>
-            <input class="form-control" type="text" placeholder="Name" id="name">
-          </div>
-          <div class="form-group font-weight-bold">
-            <label>Destination:</label>
-            <input class="form-control" type="text" placeholder="Role" id="role">
-          </div>
-          <div class="form-group font-weight-bold">
-            <label>First Train Time:</label>
-            <input class="form-control" type="text" placeholder="Start date mm/dd/yyyy" id="startDate">
-          </div>
-          <div class="form-group font-weight-bold">
-            <label>Frequency (Min)</label>
-            <input class="form-control" type="text" placeholder="Monthly Rate" id="monthlyRate">
-          </div>
-          <button type="button" class="btn btn-dark" id="add">Submit</button>
-        </form>
-      </div>
-    </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tom N' jQuery Project</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
