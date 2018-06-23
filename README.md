@@ -4,6 +4,9 @@ https://mystic5523.github.io/tom_n_jquery/
 
 Project Goal:
 
+Insert what ingredients you have to get a recipe using those ingredients and a playlist to cook to.
+
+
 Build Something Awesome
 Requirements:
 
