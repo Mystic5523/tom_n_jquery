@@ -1,6 +1,6 @@
 # tom_n_jquery
 
-https://mystic5523.github.io/group-project1
+https://mystic5523.github.io/tom_n_jquery/
 
 Project Goal:
 
