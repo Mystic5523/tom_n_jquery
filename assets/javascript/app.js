@@ -12,7 +12,7 @@ $(document).ready(function(){
     var food5 = document.getElementById("num5").value;
 
     var apikey = "637cf9cc5a93de2763c8c4a918f292a1";
-    var queryURL = "http://food2fork.com/api/search?key=" + apikey + "&q=" + food1 + "," + food2 + "," + food3 + "," + food4 + "," + food5;
+    var queryURL = "https://food2fork.com/api/search?key=" + apikey + "&q=" + food1 + "," + food2 + "," + food3 + "," + food4 + "," + food5;
     console.log(food2);
 
 
