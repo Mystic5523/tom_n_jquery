@@ -18,11 +18,12 @@ $(document).ready(function(){
     }).then(function(response){
         var results = response.data;
 
-    })
-  }
+    });
+  
+  
 //this is a test 
 
-var tag = document.createElement('script');
+ var tag = document.createElement('script');
 
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -60,5 +61,8 @@ var tag = document.createElement('script');
         }
       }
       function stopVideo() {
-        player.stopVideo();
-      }
+        player.stopVideo();}
+      })
+      
+
+});
