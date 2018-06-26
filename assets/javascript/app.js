@@ -5,10 +5,15 @@ $(document).ready(function(){
     
     
   $("#submit").on("click", function(){  
-    var food = document.getElementById("num1").value;
+    var food1 = document.getElementById("num1").value;
+    var food2 = document.getElementById("num2").value;
+    var food3 = document.getElementById("num3").value;
+    var food4 = document.getElementById("num4").value;
+    var food5 = document.getElementById("num5").value;
+
     var apikey = "637cf9cc5a93de2763c8c4a918f292a1";
-    var queryURL = "http://food2fork.com/api/search?key=" + apikey + "&q=" + food;
-    console.log(food);
+    var queryURL = "http://food2fork.com/api/search?key=" + apikey + "&q=" + food1 + "," + food2 + "," + food3 + "," + food4 + "," + food5;
+    console.log(food2);
 
 
 
@@ -16,7 +21,12 @@ $(document).ready(function(){
         url: queryURL,
         method: "GET"
     }).then(function(response){
-        var results = response.data;
+        var results = response.recipes;
+        var foodImg = response.recipes.image_url; 
+
+        var actualImage = $("<img>")
+        actualImage.attr("src", foodImg);
+        $("#card").append(actualImage);
 
     });
   
@@ -63,6 +73,6 @@ $(document).ready(function(){
       function stopVideo() {
         player.stopVideo();}
       })
-      
+
 
 });
