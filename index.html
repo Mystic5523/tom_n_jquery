@@ -5,64 +5,46 @@
   <crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Tom N' jQuery Project</title>
     <!-- Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/flatly/bootstrap.min.css" rel="stylesheet">
+    <!--CSS/Styles-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
    
   </head>
   <body>
-    <center><h1>Tom N' jQuery project 1</h1></center>
+    <center><h1>Tom N' jQuery Project</h1></center>
     <br>
     <body style="max-width: 80%; margin-left: auto; margin-right: auto; color:ecf0f1;"></body>
     <div class="row">
       <br>
-
         <div class="col-sm-8">
             <div class="w-50 p-3" "input-group input-group-sm mb-3">
-                
-<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Ingredient 1" id="food1">
+        </div>
+       
+        <div class="w-50 p-3" "input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"placeholder="Ingredient 2" id="food2">
+        </div>
 
-              </div>
-              <div class="w-50 p-3" "input-group input-group-sm mb-3">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">Ingredient 2</span>
-                  </div>
+        <div class="w-50 p-3" "input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"placeholder="Ingredient 3" id="food3">
+        </div>
 
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        <div class="w-50 p-3" "input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"placeholder="Ingredient 4" id="food4">
+        </div>
 
-                </div>
-                <div class="w-50 p-3" "input-group input-group-sm mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-sm">Ingredient 3</span>
-                    </div>
-
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-
-                  </div>
-                  <div class="w-50 p-3" "input-group input-group-sm mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-sm">Ingredient 4</span>
-                      </div>
-
-                      <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-
-                    </div>
-                    <div class="w-50 p-3""input-group input-group-sm mb-3">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="inputGroup-sizing-sm">Ingredient 5</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                      </div>
-
-                      <button type="button" class="btn btn-success">Success</button>
+        <div class="w-50 p-3" "input-group input-group-sm mb-3">
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"placeholder="Ingredient 5" id="food5">
+        </div>
+        
+        <button type="button" class="btn btn-success" id="submit">Submit</button>
         </div>
         <div class="col-sm-4">
             <div class="card-group">
                 <div class="card"> 
                   <img class="card-img-top" src="..." alt="Recipe, Image">
-
                   <div class="card-body">
                     <h5 class="card-title">Recipe</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -71,10 +53,13 @@
                 </div>
         </div>
       </div>
-    <!--Footer/Spotify goes here-->
-     <footer><br><br><br><br><br>
-      <div id="player">YouTube goes here</div>
-      </footer>
+    <!--Footer/Youtube goes here-->
+     <footer>
+       <br><br><br><br><br>
+        <div id="player">
+         
+        </div>
+    </footer>
   
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
