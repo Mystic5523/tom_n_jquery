@@ -1,7 +1,11 @@
 
 $(document).ready(function(){
     
-    
+  jQuery.ajaxPrefilter(function(options) {
+    if (options.crossDomain && jQuery.support.cors) {
+        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+    }
+});
     
     
   $("#submit").on("click", function(){  
@@ -14,24 +18,33 @@ $(document).ready(function(){
     var apikey = "637cf9cc5a93de2763c8c4a918f292a1";
     var queryURL = "https://food2fork.com/api/search?key=" + apikey + "&q=" + food1 + "," + food2 + "," + food3 + "," + food4 + "," + food5;
     console.log(food2);
-
+    console.log(queryURL);
 
 
     $.ajax({
         url: queryURL,
         method: "GET"
     }).then(function(response){
-        var results = response.recipes;
-        var foodImg = response.recipes.image_url; 
-
-        var actualImage = $("<img>")
-        actualImage.attr("src", foodImg);
-        $("#card").append(actualImage);
-
+        var results = JSON.parse(response).recipes;
+        console.log(JSON.parse(response));
+        for (i = 0; i < 4 ; i++) {
+         var foodImg = results[i].image_url;
+         console.log(foodImg);
+         
+         var actualImage = $("<img>")
+         actualImage.attr("src", foodImg);
+         $("#card").append(actualImage);
+        }
+        
+        // var actualImage = $("<img>")
+        // actualImage.attr("src", foodImg);
+        // $("#card").append(actualImage);
+        
     });
+    
   
   
-//this is a test 
+  //this is a test 
 
  var tag = document.createElement('script');
 
