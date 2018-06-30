@@ -29,11 +29,15 @@ $(document).ready(function () {
       console.log(JSON.parse(response));
       for (i = 0; i < 4; i++) {
         var foodImg = results[i].image_url;
+        var foodLink = results[i].source_url;
         console.log(foodImg);
 
-        var actualImage = $("<img>")
-        actualImage.attr("src", foodImg);
+        var actualImage = $("<img>");
+        actualImage.attr({"src": foodImg, width: "250", height: "200"});
+        var imgLink = $("<a>");
+        imgLink.attr({"href": foodLink, target: "_blank"});
         $("#card").append(actualImage);
+        $("#card").wrap(imgLink);
       }
     });
     // var actualImage = $("<img>")
@@ -55,7 +59,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '390',
+    height: '310',
     width: '640',
     videoId: 'M7lc1UVf-VE',
     events: {
