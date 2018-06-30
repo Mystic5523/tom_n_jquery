@@ -30,13 +30,21 @@ $(document).ready(function () {
       for (i = 0; i < 4; i++) {
         var foodImg = results[i].image_url;
         var foodLink = results[i].source_url;
+        var title = results[i].title;
         console.log(foodImg);
 
         var actualImage = $("<img>");
         actualImage.attr({"src": foodImg, width: "250", height: "200", id: "img" + (i+1)});
         var imgLink = $("<a>");
         imgLink.attr({"href": foodLink, target: "_blank"});
+        var titleLink = $("<p>" + title + "</p>");
+        // titleLink.attr(title)
+        console.log(title)
+        console.log (titleLink)
+
         $("#card").append(actualImage);
+        $("#card").append('<div class="caption"></div>')
+        $("#card").append(titleLink)
         $("#img" + (i+1)).wrap(imgLink);
       }
     });
