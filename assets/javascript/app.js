@@ -37,6 +37,7 @@ $(document).ready(function () {
         actualImage.attr({class: "card-img-top", "src": foodImg, width: "250", height: "200", id: "img" + (i+1)});
         var imgLink = $("<a>");
         imgLink.attr({"href": foodLink, target: "_blank"});
+
         var titleLink = $("<h5 class='card-title'>" + title + "</h5>");
         var caption =$("<div>");
         caption.attr({class: "caption"});
@@ -46,6 +47,7 @@ $(document).ready(function () {
         var card = $("<div class='card'>");
         card.append( actualImage, cardBody, caption, titleLink);
         $("#cardDeck").append(card);
+
         $("#img" + (i+1)).wrap(imgLink);
         ;
       }
@@ -94,3 +96,26 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
+
+        
+ $(document).on("click", ".caption", function(){
+  console.log("hello");
+  
+  var q = $(this).text();
+  var API_KEY = `AIzaSyC9P2EaNd3PJK-d1v71NezcojSRN0LauyM`;
+  var part = "snippet";
+  var ytSearch = 'https://www.googleapis.com/youtube/v3/search?q=' + q + '&key=' + API_KEY + '&part=' + part;
+  $.ajax({
+    url: ytSearch,
+    method: "GET"
+  }).then(function(response){
+    for (i=0; i < 1; i++){
+      
+      player.loadVideoById(response.items[0].id.videoId);
+      console.log(response.items[0].id.videoId);
+    
+    }
+    
+  })
+    
+ })       
