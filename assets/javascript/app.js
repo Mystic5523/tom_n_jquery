@@ -33,11 +33,11 @@ $(document).ready(function () {
         console.log(foodImg);
 
         var actualImage = $("<img>");
-        actualImage.attr({"src": foodImg, width: "250", height: "200"});
+        actualImage.attr({"src": foodImg, width: "250", height: "200", id: "img" + (i+1)});
         var imgLink = $("<a>");
         imgLink.attr({"href": foodLink, target: "_blank"});
         $("#card").append(actualImage);
-        $("#card").wrap(imgLink);
+        $("#img" + (i+1)).wrap(imgLink);
       }
     });
     // var actualImage = $("<img>")
