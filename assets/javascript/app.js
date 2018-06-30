@@ -34,23 +34,22 @@ $(document).ready(function () {
         console.log(foodImg);
 
         var actualImage = $("<img>");
-        actualImage.attr({"src": foodImg, width: "250", height: "200", id: "img" + (i+1)});
+        actualImage.attr({class: "card-img-top", "src": foodImg, width: "250", height: "200", id: "img" + (i+1)});
         var imgLink = $("<a>");
         imgLink.attr({"href": foodLink, target: "_blank"});
-        var titleLink = $("<p>" + title + "</p>");
-        // titleLink.attr(title)
-        console.log(title)
-        console.log (titleLink)
-
-        $("#card").append(actualImage);
-        $("#card").append('<div class="caption"></div>')
-        $("#card").append(titleLink)
+        var titleLink = $("<h5 class='card-title'>" + title + "</h5>");
+        var caption =$("<div>");
+        caption.attr({class: "caption"});
+        console.log(title);
+        console.log (titleLink);
+        var cardBody = $("<div class='card-body'>")
+        var card = $("<div class='card'>");
+        card.append( actualImage, cardBody, caption, titleLink);
+        $("#cardDeck").append(card);
         $("#img" + (i+1)).wrap(imgLink);
+        ;
       }
     });
-    // var actualImage = $("<img>")
-    // actualImage.attr("src", foodImg);
-    // $("#card").append(actualImage);
 
   });
 
