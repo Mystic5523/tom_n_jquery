@@ -99,7 +99,7 @@ function stopVideo() {
 }
 
         
- $(document).on("click", ".caption", function(){
+ $(document).on("click", ".card-title", function(){
   console.log("hello");
   
   var q = $(this).text();
