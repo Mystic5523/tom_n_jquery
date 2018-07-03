@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 
   $("#submit").on("click", function () {
+    $("#cardDeck").empty();
     var food1 = document.getElementById("num1").value;
     var food2 = document.getElementById("num2").value;
     var food3 = document.getElementById("num3").value;
@@ -68,9 +69,9 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '310',
-    width: '640',
-    videoId: 'M7lc1UVf-VE',
+    height: '380',
+    width: '700',
+    videoId: 'pcR5BLHPJeM',
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
@@ -89,7 +90,7 @@ function onPlayerReady(event) {
 var done = false;
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
-    setTimeout(stopVideo, 6000);
+    setTimeout(stopVideo, 0);
     done = true;
   }
 }
