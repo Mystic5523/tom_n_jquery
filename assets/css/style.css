@@ -14,7 +14,12 @@ h1 {
     font-family: 'Ruda', sans-serif;
 }
 
-.form-control {
+.form-control p {
     font-family: 'Roboto Slab', serif;
+}
+
+.form-control:invalid {
+    border-color: red;
+    border-width: 2px;
 }
 
