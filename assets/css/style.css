@@ -2,3 +2,9 @@ body {
     background-color: #e8f5c4;
     background-image: url("../../assets/images/checkered-light-emboss.png");
 }
+
+.card-title {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
