@@ -1,5 +1,5 @@
 body {
-    background-color: #e8f5c4;
+    background-color: #f1fcd2;
     background-image: url("../../assets/images/checkered-light-emboss.png");
 }
 
@@ -7,4 +7,14 @@ body {
     cursor: pointer;
     color: blue;
     text-decoration: underline;
+    font-family: 'Roboto Slab', serif;
 }
+
+h1 {
+    font-family: 'Ruda', sans-serif;
+}
+
+.form-control {
+    font-family: 'Roboto Slab', serif;
+}
+

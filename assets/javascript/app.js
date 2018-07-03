@@ -20,6 +20,7 @@ $(document).ready(function () {
     var queryURL = "https://food2fork.com/api/search?key=" + apikey + "&q=" + food1 + "," + food2 + "," + food3 + "," + food4 + "," + food5;
     console.log(food2);
     console.log(queryURL);
+    console.log(num1);
 
 
     $.ajax({
