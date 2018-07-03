@@ -9,12 +9,30 @@ $(document).ready(function () {
 
 
   $("#submit").on("click", function () {
-    $("#cardDeck").empty();
+    submitHandler();
+    
+
+  });
+  $(document).on("keyup", function(event) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Number 13 is the "Enter" key on the keyboard
+    if (event.keyCode === 13) {
+      // Trigger the button element with a click
+      submitHandler();
+    }
+  });
+  
+
+});
+function submitHandler() {
+  $("#cardDeck").empty();
     var food1 = document.getElementById("num1").value;
     var food2 = document.getElementById("num2").value;
     var food3 = document.getElementById("num3").value;
     var food4 = document.getElementById("num4").value;
     var food5 = document.getElementById("num5").value;
+    
 
     var apikey = "637cf9cc5a93de2763c8c4a918f292a1";
     var queryURL = "https://food2fork.com/api/search?key=" + apikey + "&q=" + food1 + "," + food2 + "," + food3 + "," + food4 + "," + food5;
@@ -54,10 +72,7 @@ $(document).ready(function () {
         ;
       }
     });
-
-  });
-
-});
+}
 
 var tag = document.createElement('script');
 
