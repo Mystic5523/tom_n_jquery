@@ -5,9 +5,14 @@ body {
 
 .card-title {
     cursor: pointer;
-    color: blue;
+    color: #18bc9c;
     text-decoration: underline;
     font-family: 'Roboto Slab', serif;
+}
+
+.card-body {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -24,3 +29,22 @@ h1 {
     border-width: 2px;
 }
 
+.card-deck {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    color: saddlebrown;
+    font-size: 1.2rem;
+}
+
+#submit {
+    background-color: white;
+}
+
+#submit:hover {
+    background-color: #18bc9c;
+}
