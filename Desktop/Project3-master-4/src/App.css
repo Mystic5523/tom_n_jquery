@@ -1,0 +1,20 @@
+a:link {
+  text-align: center;
+  text-decoration: none;
+}
+body {
+  padding-top: 55px;
+}
+
+.fixed-top {
+  background-color: darkolivegreen;
+  text-align: center;
+}
+h5,
+h2 {
+  padding-top: 6px;
+  padding-left: 6px;
+}
+h1 {
+  padding-left: 20px;
+}
