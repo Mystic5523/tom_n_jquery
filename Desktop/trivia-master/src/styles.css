@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  align-items: center;
+  background: #000;
+  color: #fff;
+  display: flex;
+	font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

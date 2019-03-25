@@ -1,0 +1,13 @@
+.quiz-wrapper {
+  max-height: 100vh;
+  max-width: 31rem;
+}
+
+h1 {
+  color: #4db6ac;
+  float: left;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
+  padding: 1rem;
+}

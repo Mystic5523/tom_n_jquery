@@ -1,0 +1,65 @@
+.question-tracker,
+.results-header {
+  color: #ff9800;
+  float: right;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 1rem;
+}
+
+.quiz {
+  clear: both;
+}
+
+.question,
+.results {
+  background: #111;
+  color: #cddc39;
+  margin: 0;
+  padding: 1rem;
+}
+
+.question {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+}
+
+.answers {
+  background: #1f1f1f;
+  list-style-position: inside;
+  list-style-type: lower-alpha;
+}
+
+.answers li {
+  color: #f06292;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 1rem;
+  transition:all 0.5s ease;
+}
+
+.answers li:hover {
+  background: #222;
+  color: #ba68c8;
+}
+
+.results {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.score {
+  color: #f06292;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.result-message {
+  font-size: 2.8rem;
+}
+
+.result-action {
+  color: #ba68c8;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+}
