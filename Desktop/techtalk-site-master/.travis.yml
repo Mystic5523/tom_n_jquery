@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '10'
+branches:
+  only:
+  - master
+install:
+  - npm install -g firebase-tools
+  - npm install -g @angular/cli@8.2.1
+script:
+  - npm ci
+  - npm run build
+after_success:
+  - firebase deploy
+

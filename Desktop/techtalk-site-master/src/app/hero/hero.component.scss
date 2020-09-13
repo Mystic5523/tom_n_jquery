@@ -1,0 +1,38 @@
+@import 'variables';
+@import 'typography';
+
+
+#hero {
+  background: $darker-blue;
+  text-align: center;
+
+  .container {
+    padding: 80px 40px;
+
+    .row {
+      justify-content: center;
+    }
+  }
+
+  .techtalks {
+    display: block;
+    height: 80px;
+    width: 300px;
+    background: url(src/assets/images/logos/techtalk_inverse.png) no-repeat 0px 0px;
+    background-size: contain;
+    margin: 0 auto;
+  }
+
+  .techtalk-image {
+    display: block;
+    height: 400px;
+    width: 100vw;
+    background-image: url(src/assets/images/hero.jpg);
+    background-size: cover;
+    background-position-y: center;
+  }
+}
+
+h2 {
+  font-weight: 400;
+}

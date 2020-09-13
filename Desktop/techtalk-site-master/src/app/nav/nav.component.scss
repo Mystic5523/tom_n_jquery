@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'typography';
+
+.nav-background {
+    background:  $darker-blue;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: $white;
+}
+
+.dropdown-item:hover{
+    background-color: $dark-aqua;
+}
+
+.dropdown-menu>li>a{
+    color: $white;
+
+    &:hover {
+        opacity: 0.75;
+    }
+}
+
+@media (max-width: 768px) {
+  button {
+    margin-left: 0.5rem;
+  }
+
+  .navbar {
+    padding: 0.5rem 0;
+    color: $white;
+  }
+
+  .nav-item {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center;
+    color: $white;
+
+    .dropdown-menu {
+      background-color: $aqua;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
