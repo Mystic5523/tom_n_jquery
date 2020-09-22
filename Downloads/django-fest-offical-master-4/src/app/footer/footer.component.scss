@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'typography';
+
+#footer {
+    padding-top: 12px;
+    background: $aqua;
+    height: 75px;
+
+    a {
+        color: $white;
+    }
+}

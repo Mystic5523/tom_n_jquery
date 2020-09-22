@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'typography';
+
+#contact {
+    background: $white;
+    padding: 100px 40px;
+    border-bottom: solid 10px $dark-aqua;
+
+    @media (max-width: 768px) {
+      padding: 60px 40px;
+    }
+    img {
+        margin-bottom: 30px;
+    }
+    h4, h5, p{
+        color: $teal;
+    }
+
+    h5 {
+      font-weight: 300;
+    }
+
+    a.kcwit-logo {
+       display: block;
+       height: 250px;
+       background: url(/assets/images/logos/kcwit-logo.png) no-repeat 0px 0px;
+       background-size: contain;
+    }
+
+    a.btn {
+       margin-right: 1em;
+       border-color: $teal;
+       color: $teal;
+
+       &:hover {
+           background-color: $teal;
+           color: $white;
+       }
+    }
+}

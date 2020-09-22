@@ -1,0 +1,11 @@
+:host {
+  display: block;
+}
+
+.map-component{
+  height: 100%;
+
+  & > * {
+    height: inherit;
+  }
+}
